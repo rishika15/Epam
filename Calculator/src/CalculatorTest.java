@@ -25,10 +25,10 @@ class CalculatorTest {
 	@Test
 	public void testDivision() {
 		Calculator c = new Calculator();
-		assertEquals(1, c.Division(3,2));
-		assertEquals(-1, c.Division(3,-2));
-		assertEquals(-1, c.Division(-3,2));
-		assertEquals(1, c.Division(-3,-2));
+		assertEquals(1.5, c.Division(3,2));
+		assertEquals(-1.5, c.Division(3,-2));
+		assertEquals(-1.5, c.Division(-3,2));
+		assertEquals(1.5, c.Division(-3,-2));
 		Assertions.assertThrows(ArithmeticException.class, () -> c.Division(5, 0));
 	}
 		
